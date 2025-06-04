@@ -1,0 +1,35 @@
+//sturdy-cppcl
+
+main is primary method.
+main() fn can exist without any class
+
+//////////////////////////////////////////
+In C++
+
+#include <bits/stdc++.h>
+using namespace std;
+
+char solve(string s, int k) {
+  if (s.size() >= k) {
+    return s.at(k-1);
+  }
+  
+  string t;
+  for (int ch : s) {
+    char newChar = (((ch % 97) + 1) % 112) + 97;
+    t.push_back(newChar);
+  }
+  
+  s += t;
+  return solve(s, k);
+}
+
+int main() {
+	int k = 5;
+	string s = "a";
+	cout << solve(s, k);
+	
+}
+
+Is this code fine?
+/////////////////////////////////////////////////////////////////////////////////////
