@@ -7,7 +7,9 @@ returnType functionName(parameterType parameterName) {
 */
 #include <iostream>
 
-
+int checkTemperature(int temperature){
+    return temperature > 30 ? 1 : 0; // Returns 1 if temperature is above 30, otherwise returns 0
+}
 int main(){
     int temp_1 = checkTemperature(35); 
     int temp_2 = checkTemperature(25); 
@@ -21,9 +23,7 @@ int main(){
     return 0;
 }
 
-int checkTemperature(int temperature){
-    return temperature > 30 ? 1 : 0; // Returns 1 if temperature is above 30, otherwise returns 0
-}
+
 
 // Funtion with no return value
 // Funtion declaration

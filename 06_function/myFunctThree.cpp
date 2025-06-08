@@ -13,6 +13,6 @@ int main(){
     // Call by reference
     pourChai(chaiCups);
 
-    cout << "Total cups of chai: " << chaiCups << endl; // This will still print 2, not 5
+    cout << "Total cups of chai: " << chaiCups << endl; // This will still print 7, not 2.
     return 0;
 }

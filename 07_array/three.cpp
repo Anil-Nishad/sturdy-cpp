@@ -14,8 +14,8 @@ int main() {
     cout << "Chai Served on Day 1: " << chaiServed[0] << " cups" << endl;
     cout << "Chai Served on Day 2: " << chaiServed[1] << " cups" << endl;
 
-    int total = totalChaiServed(chaiServed, 7);
-    cout << "Total Chai Served in a Week: " << total << " cups" << endl;
+    int totalChai = totalChaiServed(chaiServed, 7);
+    cout << "Total Chai Served in a Week: " << totalChai << " cups" << endl;
 
     return 0;
 
